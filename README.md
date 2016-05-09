@@ -1,8 +1,8 @@
-# Geometric Classes
+# Geometric Models
 
-This is an exercise I did to practice my OOP skills, by building two classes: `circle` and `square`. Each class has a variety of instance methods for calculating information about the shapes in question.
+This is an exercise I did to practice my OOP skills by building two classes: `circle` and `square`. Each class has a variety of instance methods for calculating information about the shapes in question.
 
-The `spec` folder contains RSpec tests, which I used to drive development.
+The `spec` folder contains RSpec unit tests. I used these to drive development, and they provide full test coverage of both models.
 
 ##Models
 
@@ -30,6 +30,6 @@ The `spec` folder contains RSpec tests, which I used to drive development.
       * calculates square's perimeter
     * `#area`
       * calculates square's area
-    * `contains_point?`
+    * `#contains_point?`
       * determines whether or not a given point is contained within the square's bounds.
       * required arguments (point_x, point_y)
