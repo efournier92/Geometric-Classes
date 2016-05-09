@@ -1,20 +1,10 @@
 class Circle
+  attr_reader :radius, :x, :y
+
   def initialize(radius, center_x = 0, center_y = 0)
     @radius = radius
-    @center_x = center_x
-    @center_y = center_y
-  end
-
-  def x
-    @center_x
-  end
-
-  def y
-    @center_y
-  end
-
-  def radius
-    @radius
+    @x = center_x
+    @y = center_y
   end
 
   def diameter
@@ -28,4 +18,5 @@ class Circle
   def perimeter
     @perimeter = Math::PI * 2 * @radius
   end
+
 end

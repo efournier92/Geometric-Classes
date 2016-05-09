@@ -1,16 +1,10 @@
 class Square
+  attr_reader :side, :x, :y
+
   def initialize(side, center_x = 0, center_y = 0)
     @side = side
-    @center_x = center_x
-    @center_y = center_y
-  end
-
-  def x
-    @center_x
-  end
-
-  def y
-    @center_y
+    @x = center_x
+    @y = center_y
   end
 
   def length
@@ -34,7 +28,8 @@ class Square
   end
 
   def contains_point?(point_x, point_y)
-    point_x.between?(@center_x - @side / 2.0, @center_x + @side / 2.0) &&
-    point_y.between?(@center_y - @side / 2.0, @center_y + @side / 2.0)
+    point_x.between?(@x - @side / 2.0, @x + @side / 2.0) &&
+    point_y.between?(@y - @side / 2.0, @y + @side / 2.0)
   end
+
 end
